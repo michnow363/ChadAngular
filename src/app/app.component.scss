@@ -1,57 +1,60 @@
-#backgroundImage {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/assets/images/mainBackground.jpg");
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.intro-2 {
+  background: url("/assets/images/mainBackground.jpg")no-repeat center center;
+  background-size: cover;
 }
-.intro-header {
-    height: unset !important;
-  }
-  .intro-2 {
-    background: url("/assets/images/mainBackground.jpg")no-repeat center center;
-    background-size: cover;
-  }
-  .view {
-    height: 100vh !important;
-  }
-  .top-nav-collapse {
-    background-color: #3f51b5 !important;
-  }
+.view {
+  height: 100vh !important;
+}
+.top-nav-collapse {
+  background-color: #3f51b5 !important;
+}
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+@media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+    background: #3f51b5 !important;
   }
-  @media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-      background: #3f51b5 !important;
-    }
+}
+.rgba-gradient .full-bg-img {
+  background: linear-gradient(45deg, rgba(83, 125, 210, 0.4), rgba(178, 30, 123, 0.4) 100%);
+}
+.full-bg-img {
+  height: 100%;
+}
+.card {
+  background-color: rgba(229, 228, 255, 0.2);
+}
+
+.md-form .prefix {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.md-form label {
+  color: #ffffff;
+}
+h6 {
+  line-height: 1.7;
+}
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 1040px;
   }
-  .rgba-gradient .full-bg-img {
-    background: linear-gradient(45deg, rgba(83, 125, 210, 0.4), rgba(178, 30, 123, 0.4) 100%);
-  }
-  .full-bg-img {
-    height: 100%;
-  }
-  .card {
-    background-color: rgba(229, 228, 255, 0.2);
-  }
-  
-  .md-form .prefix {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
-  .md-form label {
-    color: #ffffff;
-  }
-  h6 {
-    line-height: 1.7;
-  }
-  @media (max-width: 740px) {
-    .full-height,
-    .full-height body,
-    .full-height header,
-    .full-height header .view {
-      height: 1040px;
-    }
-  }
+}
+.mat-icon{
+  transform: scale(0.8);
+}
+.transform-size{
+  transform: scale(0.5);
+}
+.avatar-image{
+  max-height: 2.5rem;
+  max-width: 2.5rem;
+}
+
+.register-panel{
+  padding-left: 0%;
+}

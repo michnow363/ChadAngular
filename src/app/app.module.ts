@@ -18,6 +18,8 @@ import { ChatNewMessageAreaComponent } from './chat-new-message-area/chat-new-me
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
 
 
 @NgModule({
@@ -40,6 +42,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     BrowserAnimationsModule,
+
+    MatIconModule,
+    MatBadgeModule,
   ],
   providers: [ ],
   bootstrap: [AppComponent]

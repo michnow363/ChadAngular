@@ -6,10 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  hidden = false;
+  unreadMessages = 0;
+
+  btType:ButtonType; 
+  buttonEnumType: typeof ButtonType = ButtonType;
   title = 'mdb-angular-free';
 
   successAlert = false;
 
+  setUnreadMessageNumber(){
+    this.unreadMessages = 15;
+  }
+  setButtonText(buttonType:ButtonType){
+    this.btType=buttonType;
+  }
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
   copyToClipboard(value: string): void {
     const tempInput = document.createElement("input");
     tempInput.value = value;
@@ -24,4 +38,10 @@ export class AppComponent {
       this.successAlert = false;
     }, 900);
   }
+}
+
+enum ButtonType{
+  none,
+  home, 
+  info,
 }
