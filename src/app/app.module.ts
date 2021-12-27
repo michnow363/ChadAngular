@@ -20,6 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatTabsModule} from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -45,6 +49,11 @@ import { MatBadgeModule } from '@angular/material/badge';
 
     MatIconModule,
     MatBadgeModule,
+    MatFormFieldModule,
+    MatTabsModule,
+    MatCardModule,
+    MatCheckboxModule,
+    
   ],
   providers: [ ],
   bootstrap: [AppComponent]
