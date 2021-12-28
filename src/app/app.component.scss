@@ -143,3 +143,11 @@ button{
   padding-left: 0;
   padding-right: 0;
 }
+
+.non-scrollable{
+  overflow: hidden;
+}
+
+.credentials-panel{
+  height: 90%;
+}
