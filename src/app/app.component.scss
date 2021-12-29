@@ -149,5 +149,30 @@ button{
 }
 
 .credentials-panel{
-  height: 90%;
+  height: 480px;
+  width: 300px;
+}
+
+.sign-in-textboxs{
+  height: 290px;
+}
+
+.sign-up-textboxs{
+  height: 235px;
+}
+
+.credentials-button-div{
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.div-center{
+  display: flex;
+  align-items: center;
+}
+
+.element-center{
+  display: block;
+  margin:0 auto;
 }

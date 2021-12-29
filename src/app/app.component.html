@@ -52,111 +52,95 @@
 
 
   <!--Section-->
-  <section class="view background non-scrollable">
-    <div class="container flex-center non-scrollable">
-      <div class="d-flex align-items-left content-height w-100 non-scrollable" role="navigation">
-        <mat-tab-group mat-streach-tabs class="example-streched-tabs white-text non-scrollable credentials-panel">
-          <mat-tab  label="Sign Up">
-            <mat-card-content class=" credentials-panel">
-              <div class=" flex-center non-scrollable">
-                <div class="non-scrollable" role="navigation">
-                  <div class="register-panel non-scrollable">
-                    <div class="non-scrollable">
-
-                      <mdb-card class="margins wow fadeInRight non-scrollable credentials-panel" data-wow-delay="0.3s">
-                        <mdb-card-body>
-
-                          <div class="text-center">
-                            <h1 class="white-text">
-                              <mdb-icon fas icon="file-signature" class="text-white"></mdb-icon> Sign up
-                            </h1>
-                            <p class="grey-text">Please fill in this form to create an account!</p>
-                          </div>
-
-                          <div>
-                            <div class="md-form">
-                              <mdb-icon fas icon="user" class="prefix text-white active"></mdb-icon>
-                              <input type="text" id="form" class="text-white form-control" mdbInput>
-                              <label for="form" class="text-white">Your name</label>
-                            </div>
-                          </div>
-                          <div class="md-form">
-                            <mdb-icon fas icon="envelope" class="prefix text-white active"></mdb-icon>
-                            <input type="email" id="form1" class="text-white form-control" mdbInput>
-                            <label for="form1" class="text-white">Your email</label>
-                          </div>
-                          <div class="md-form">
-                            <mdb-icon fas icon="key" class="prefix text-white active"></mdb-icon>
-                            <input type="password" id="form2" class="text-white form-control" mdbInput>
-                            <label for="form2" class="text-white">Your password</label>
-                          </div>
+  <section class="view background">
+    <div class="container flex-center">
+      <div class="d-flex align-items-left content-height w-100" role="navigation">
+        <mat-tab-group mat-streach-tabs class="example-streched-tabs white-text">
+          <mat-tab label="Sign Up" class="white-text">
+            <mat-card-content>
+              <div class="non-scrollable" role="navigation">
+                <mdb-card class="wow fadeInRight" data-wow-delay="0.3s">
+                  <mdb-card-body class="credentials-panel">
+                    <div class="text-center">
+                      <h1 class="white-text">
+                        Sign up
+                      </h1>
+                      <p class="grey-text">Please fill in this form to create an account!</p>
+                    </div>
+                    <div class="sign-up-textboxs">
+                      <div>
+                        <div class="md-form">
+                          <mdb-icon fas icon="user" class="prefix text-white active"></mdb-icon>
+                          <input type="text" id="form" class="text-white form-control" mdbInput>
+                          <label for="form" class="text-white">Your name</label>
+                        </div>
+                      </div>
+                      <div class="md-form">
+                        <mdb-icon fas icon="envelope" class="prefix text-white active"></mdb-icon>
+                        <input type="email" id="form1" class="text-white form-control" mdbInput>
+                        <label for="form1" class="text-white">Your email</label>
+                      </div>
+                      <div class="md-form">
+                        <mdb-icon fas icon="key" class="prefix text-white active"></mdb-icon>
+                        <input type="password" id="form2" class="text-white form-control" mdbInput>
+                        <label for="form2" class="text-white">Your password</label>
+                      </div>
 
 
-                          <div class="grey-text form-check d-flex mb-4">
-                            <input class="form-check-input me-2" type="checkbox" id="registerCheck" unchecked />
-                            <label class="form-check-label" for="registerCheck">
-                              I have read and agree to the terms
-                            </label>
-                          </div>
+                      <div class="grey-text form-check d-flex mb-4">
+                        <input class="form-check-input me-2" type="checkbox" id="registerCheck" unchecked />
+                        <label class="form-check-label" for="registerCheck">
+                          I have read and agree to the terms
+                        </label>
+                      </div>
+                    </div>
 
-                          <div class="text-center mt-4">
-                            <button mdbBtn color="info" mdbWavesEffect>
-                              <div class="font-color">
-                                Sign up
-                              </div>
-                            </button>
-
-                          </div>
-                        </mdb-card-body>
-                      </mdb-card>
+                    <div class="text-center mt-4 credentials-button-div">
+                      <button class="element-center" mdbBtn color="info" mdbWavesEffect>
+                        <div class="font-color">
+                          Sign up
+                        </div>
+                      </button>
 
                     </div>
-                  </div>
-                </div>
+                  </mdb-card-body>
+                </mdb-card>
+
+
               </div>
             </mat-card-content>
           </mat-tab>
-          <mat-tab label="Sign In" class="white-text non-scrollable">
+          <mat-tab label="Sign In" class="white-text">
             <mat-card-content>
-              <div class=" non-scrollable">
-                <div class=" non-scrollable" role="navigation">
-                  <div class=" non-scrollable">
-                    <div class=" non-scrollable">
-
-                      <mdb-card class="wow fadeInRight non-scrollable" data-wow-delay="0.3s">
-                        <mdb-card-body>
-
-                          <div class="text-center">
-                            <h1 class="white-text">
-                              <mdb-icon fas icon="file-signature" class="text-white"></mdb-icon> Sign In
-                            </h1>
-                          </div>
-
-                          <div class="md-form">
-                            <mdb-icon fas icon="envelope" class="prefix text-white active"></mdb-icon>
-                            <input type="email" id="form1" class="text-white form-control" mdbInput>
-                            <label for="form1" class="text-white">Your email</label>
-                          </div>
-                          <div class="md-form">
-                            <mdb-icon fas icon="key" class="prefix text-white active"></mdb-icon>
-                            <input type="password" id="form2" class="text-white form-control" mdbInput>
-                            <label for="form2" class="text-white">Your password</label>
-                          </div>
-
-                          <div class="text-center mt-4">
-                            <button mdbBtn color="info" mdbWavesEffect>
-                              <div class="font-color">
-                                Sign in
-                              </div>
-                            </button>
-
-                          </div>
-                        </mdb-card-body>
-                      </mdb-card>
-
+              <div class=" non-scrollable" role="navigation">
+                <mdb-card class="wow fadeInRight" data-wow-delay="0.3s">
+                  <mdb-card-body class="credentials-panel">
+                    <div class="text-center">
+                      <h1 class="white-text">
+                        Sign In
+                      </h1>
                     </div>
-                  </div>
-                </div>
+                    <div class="sign-in-textboxs">
+                      <div class="md-form">
+                        <mdb-icon fas icon="envelope" class="prefix text-white active"></mdb-icon>
+                        <input type="email" id="form1" class="text-white form-control" mdbInput>
+                        <label for="form1" class="text-white">Your email</label>
+                      </div>
+                      <div class="md-form">
+                        <mdb-icon fas icon="key" class="prefix text-white active"></mdb-icon>
+                        <input type="password" id="form2" class="text-white form-control" mdbInput>
+                        <label for="form2" class="text-white">Your password</label>
+                      </div>
+                    </div>
+                    <div class="text-center mt-4 credentials-button-div">
+                      <button class="element-center" mdbBtn color="info" mdbWavesEffect>
+                        <div class="font-color">
+                          Sign in
+                        </div>
+                      </button>
+                    </div>
+                  </mdb-card-body>
+                </mdb-card>
               </div>
             </mat-card-content>
           </mat-tab>
